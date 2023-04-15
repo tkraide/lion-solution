@@ -1,0 +1,736 @@
+/*
+  Theme Name: TheEvent
+  Theme URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+  Author: BootstrapMade.com
+  License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+@font-face {
+    font-family: 'nexa_boldregular';
+    src: url('../nexa_bold-webfont.woff2') format('woff2'),
+         url('../nexa_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'nexa_lightregular';
+    src: url('../nexa_light-webfont.woff2') format('woff2'),
+         url('../nexa_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+  background-color: #f6f7fd;
+}
+
+/* Prelaoder */
+
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #fff url("../img/preloader.svg") no-repeat center center;
+}
+
+.tituloCard{
+    font-family: 'nexa_lightregular';
+    margin-top: 100px;
+    color: #e0072f;
+}
+
+.cardBody{
+    font-family: 'nexa_lightregular';
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.cardBody1{
+    background-color: #0071e5;
+    color: white;
+    padding: 10px 15px 10px 15px;
+}
+.cardBody2{
+    background-color: white;
+    color: black;
+    padding: 30px 15px 30px 15px;
+}
+
+.botaoVoltar{
+    font-family: 'nexa_boldregular';
+    text-decoration: none;
+    color: #e0072f;
+    font-size: 15px;
+    margin-left: 15%;
+}
+.imgVoltar{
+    margin-right: 8px;
+}
+
+
+/* Back to top button */
+.back-to-top {
+  position: fixed;
+  display: none;
+  background: #f82249;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50px;
+  right: 15px;
+  bottom: 15px;
+  transition: background 0.5s ease-in-out;
+}
+
+.back-to-top i {
+  font-size: 24px;
+  padding-top: 6px;
+}
+
+@media (max-width: 768px) {
+  .menucontatoimg{
+    width: 37px;
+  }
+  .menucontatoimg2{
+    width: 42px;
+  }
+  .menucontatoimg3{
+    width: 37px;
+  }
+
+.tituloCard2{
+    font-size: 20px;
+}
+.card-title{
+    font-size: 14px;
+}
+  .back-to-top {
+    bottom: 15px;
+  }
+}
+
+.back-to-top:focus {
+  background: #e0072f;
+  color: #fff;
+  outline: none;
+}
+
+.back-to-top:hover {
+  background: #e0072f;
+  color: #fff;
+}
+
+
+
+/* Sections Header
+--------------------------------*/
+
+/* Sections Header
+--------------------------------*/
+
+.section-header h3 {
+  font-size: 65px;
+  color: #fff;
+  text-align: center;
+  font-weight: 200;
+  position: relative;
+ font-family: 'nexa_lightregular';
+}
+
+.section-header h4 {
+    padding-bottom: 1%;
+	padding-top: 3%;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    font-weight: 200;
+    position: relative;
+ font-family: 'nexa_lightregular';
+    letter-spacing: 0px;
+}
+
+.section-header p {
+  text-align: center;
+  margin: auto;
+  font-size: 18px;
+  padding-bottom: 80px;
+  padding-top: 50px;
+  color: #fff;
+  width: 70%;
+}
+
+.section-with-bg {
+  background-color: #f6f7fd;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+#header {
+  height: 110px;
+  padding: 25px 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  z-index: 997;
+  background: #303030;
+}
+
+#header.header-scrolled,
+#header.header-fixed {
+  background: rgb(48 48 48 / 70%);
+  height: 110px;
+  padding: 25px 0;
+  transition: all 0.5s;
+}
+
+#header #logo h1 {
+  font-size: 36px;
+  margin: 0;
+  padding: 6px 0;
+  line-height: 1;
+  font-family: 'nexa_boldregular';
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+#header #logo h1 span {
+  color: #ff0d3e;
+}
+
+#header #logo h1 a,
+#header #logo h1 a:hover {
+  color: #fff;
+}
+
+#header #logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 65px;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+
+/* Nav Menu Essentials */
+
+.nav-menu,
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu ul {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  z-index: 99;
+}
+
+.nav-menu li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu > li {
+  float: left;
+}
+
+.nav-menu li:hover > ul,
+.nav-menu li.sfHover > ul {
+  display: block;
+}
+
+.nav-menu ul ul {
+  top: 0;
+  left: 100%;
+}
+
+.nav-menu ul li {
+  min-width: 180px;
+}
+
+/* Nav Menu Arrows */
+
+.sf-arrows .sf-with-ul {
+  padding-right: 30px;
+}
+
+.sf-arrows .sf-with-ul:after {
+  content: "\f107";
+  position: absolute;
+  right: 15px;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.sf-arrows ul .sf-with-ul:after {
+  content: "\f105";
+}
+
+/* Nav Meu Container */
+
+#nav-menu-container {
+    float: left;
+    margin: 20px;
+}
+
+/* Nav Meu Styling */
+
+.nav-menu a {
+  padding: 8px;
+  margin: 0px 3px 0px 3px;
+  text-decoration: none;
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "nexa_boldregular", sans-serif;
+  font-size: 13px;
+  outline: none;
+ text-transform:uppercase;
+}
+
+
+.nav-menu .menu-active a,
+.nav-menu a:hover {
+  color: #13b0da;
+  text-decoration: underline 2px;
+  text-underline-offset: 5px;
+}
+
+.nav-menu > li {
+    margin-left: 15px;
+}
+
+.nav-menu > li img{
+
+width:70%;
+}
+
+
+
+.nav-menu li.buy-tickets a {
+  color: #fff;
+  background: #ff0d3e;
+  padding: 7px 22px;
+  border-radius: 50px;
+  border: 2px solid #ff0d3e;
+  transition: all ease-in-out 0.3s;
+  font-weight: 500;
+  margin-left: 8px;
+  margin-top: 2px;
+  line-height: 1;
+  font-size: 13px;
+}
+
+.nav-menu li.buy-tickets a:hover {
+  background: none;
+}
+
+.nav-menu li.buy-tickets:hover a:before,
+.nav-menu li.buy-tickets.menu-active a:before {
+  visibility: hidden;
+}
+
+.nav-menu ul {
+  margin: 4px 0 0 0;
+  padding: 10px;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  background: #fff;
+  border-radius: 3px;
+}
+
+.nav-menu ul li {
+  transition: 0.3s;
+}
+
+
+
+.nav-menu ul li a {
+  padding: 10px;
+  color: #060c22;
+  transition: 0.3s;
+  display: block;
+  font-size: 13px;
+  text-transform: none;
+  border-radius: 3px;
+}
+
+.nav-menu ul li img {
+  padding: 10px;
+  color: #060c22;
+  transition: 0.3s;
+  display: block;
+  font-size: 13px;
+  text-transform: none;
+  border-radius: 3px;
+}
+
+.nav-menu ul li:hover > a {
+  background: #ff0d3e;
+  color: #fff;
+}
+
+.nav-menu ul ul {
+  margin: 0;
+}
+
+/* Mobile Nav Toggle */
+
+#mobile-nav-toggle {
+  position: fixed;
+  left: 15px;
+  top: 0;
+  z-index: 999;
+  margin: 30px 15px 0 0;
+  border: 0;
+  background: none;
+  font-size: 40px;
+  display: none;
+  transition: all 0.4s;
+  outline: none;
+  cursor: pointer;
+  
+}
+
+#mobile-nav-toggle i {
+  color: #fff;
+}
+
+/* Mobile Nav Styling */
+
+#mobile-nav {
+  position: fixed;
+  top: 0;
+  padding-top: 110px;
+  bottom: 0;
+  z-index: 998;
+  background: rgba(48, 48, 48, 0.9);
+  left: -260px;
+  width: 260px;
+  overflow-y: auto;
+  transition: 0.4s;
+
+}
+
+#mobile-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#mobile-nav ul li {
+  position: relative;
+}
+
+#mobile-nav ul li a {
+  color: #fff;
+  font-size: 20px;
+  overflow: hidden;
+  padding: 10px 22px 10px 15px;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  outline: none;
+  text-align: center;
+}
+
+#mobile-nav ul li a:hover {
+  color: #ff0d3e;
+}
+
+#mobile-nav ul li li {
+  padding-left: 30px;
+}
+
+#mobile-nav ul .menu-has-children i {
+  position: absolute;
+  right: 0;
+  z-index: 99;
+  padding: 15px;
+  cursor: pointer;
+  color: #fff;
+}
+
+#mobile-nav ul .menu-has-children i.fa-chevron-up {
+  color: #ff0d3e;
+}
+
+#mobile-nav ul .menu-item-active {
+  color: #ff0d3e;
+}
+
+#mobile-body-overly {
+  width: 100%;
+  height: 100%;
+  z-index: 997;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(48, 48, 48, 0.8);
+  display: none;
+}
+
+/* Mobile Nav body classes */
+
+body.mobile-nav-active {
+  overflow: hidden;
+}
+
+body.mobile-nav-active #mobile-nav {
+  left: 0;
+}
+
+body.mobile-nav-active #mobile-nav-toggle {
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Responsive Media Queries
+--------------------------------------------------------------*/
+
+
+@media (min-width: 768px) {
+  .menucontatoimg{
+    width: 11%;
+  }
+  .menucontatoimg2{
+    width: 13%;
+  }
+  .menucontatoimg3{
+    width: 11%;
+  }
+
+  .followmenu{
+    font-size:13px;
+  }
+  .iconemenumobile{
+    display: none;
+    height: 0px;
+    width: 0px;
+  }
+  .fechamenu{
+    display: none;
+    height: 0px;
+    width: 0px;
+  }
+  #contato .contato-address,
+  #contato .contato-phone,
+  #contato .contato-email {
+    padding: 20px 0;
+  }
+
+  #contato .contato-phone {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+  }
+}
+
+@media (min-width: 991px) {
+  #schedule .sub-heading {
+    width: 75%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #intro {
+    background-attachment: fixed;
+	overflow: hidden;
+  }
+
+  #solucoes {
+    background-attachment: fixed;
+	overflow: hidden;
+  }
+
+  #subscribe {
+    background-attachment: fixed;
+	overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  #intro .frase {
+    margin: 80% 10% 10% 5%;
+    text-align: left;
+
+  } 
+}
+
+@media (max-width: 1199px) {
+  #header .container {
+    max-width: 100%;
+  }
+
+  .nav-menu a {
+    padding: 8px 4px;
+  }
+}
+
+@media (max-width: 1065px) {
+  #header {
+    background: rgba(30, 30, 30, 0.98);
+    height: 110px;
+    padding: 25px 0;
+    transition: all 0.5s;
+  }
+
+  #nav-menu-container {
+    display: none;
+	overflow: hidden;
+	
+  }
+
+  #mobile-nav-toggle {
+    display: inline;
+	overflow: hidden;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  #footer .info-footer {
+    text-align:center;
+    padding: 30px 0px;
+}
+}
+
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  #schedule .nav-tabs a {
+    padding: 8px 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  #schedule .nav-tabs a {
+    padding: 8px 30px;
+  }
+}
+
+
+@media (max-width: 1065px) {
+#header #logo img {
+    padding: 5px;
+    margin-left: 10px;
+    max-height: 65px;
+}
+}
+
+@media only screen and (max-width: 720px) {
+  #solucoes .bt-centro{ 
+  position: relative; 
+  bottom: 30%;
+  left: 25%;
+   padding: 20px 20px 10px 20px ;
+   overflow: hidden;
+  } 
+}
+
+
+@media only screen and (max-width: 740px) {
+#footer .footer-top .footer-links {
+  margin-bottom: 27px;
+  top: 8px;
+  left: 12px;
+}
+
+}
+
+
+@media only screen and (max-width: 768px) {
+  .tracomenu{
+    display: none;
+  }
+  .followmenu{
+    /* margin-top: 270px; */
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 13px;
+  }
+  .img1menu{
+    width: 30px;
+  }
+  .img2menu{
+    width: 40px;
+    margin-top: 2px;
+  }
+  .followmenuimg1{
+    display: inline-block;
+    margin-left: 25px;
+  }
+  .followmenuimg2{
+    display: inline-block;
+  }
+  .followmenuimg3{
+    display: inline-block;
+  }
+  #mobile-nav-toggle i{
+    color: rgba(0, 0, 0, 0);
+    width: 40px;
+    height: 30px;
+    margin-left: 10px;
+  }
+  .iconemenumobile{
+    width: 40px;
+    height: 30px;
+  }
+  .menucontatoimg{
+    margin-left: 14px;
+  }
+
+  .fechamenu{
+    margin-top: -175px;
+    margin-left: 30px;
+    margin-bottom: -50px;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+#footer {
+    margin-top: 30px;
+    background: #000;
+    padding: 100px 0px ;
+    color: #eee;
+    overflow: hidden;
+  }
+  
+  #footer p {
+      font-size: 16px;
+      color:#fff;
+      padding: 5px 20px ;
+      font-family: 'nexa_lightregular';
+      
+  }

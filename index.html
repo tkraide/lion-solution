@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Lion Solutions</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  
+
+  <!-- Favicons -->
+  <link href="img/logo1.png" rel="icon">
+  <link href="img/logo1.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:300,400,500,700,800" rel="stylesheet">
+  
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.1.3/flatly/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+   <!-- Latest Google Maps API JS -->
+  <!-- You need your own Google API Key for this script; Get it here: https://developers.google.com/maps/documentation/javascript/get-api-key -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0Dx_boXQiwvdz8sJHoYeZNVTdoWONYkU&callback=initMap"></script>  
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/venobox/venobox.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  <script src="js/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+
+ <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+                zoom: 17,
+                center: new google.maps.LatLng(-23.608327, -46.665668),   
+                mapTypeId: google.maps.MapTypeId.TERRAIN
+            };
+
+        var map = new google.maps.Map(document.getElementById("map-location"),
+                                        mapOptions);
+                                  
+        var marker = new google.maps.Marker({
+                        map: map, 
+                        draggable: false, 
+                        position: new google.maps.LatLng(-23.608327, -46.665668)
+            });
+     }
+                            
+     google.maps.event.addDomListener(window, 'resize', initialize);
+     google.maps.event.addDomListener(window, 'load', initialize);
+         		 
+  </script>
+
+  
+  
+</head>
+
+<body>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
+        <img class="iconemenumobile" src="img/iconemenu.png"/>
+        <a href="#intro" class="scrollto"><img src="img/logo-lion.png" alt="" title=""></a>
+      </div>
+	  <div class="d-block d-sm-none">
+		<a href="#puxadorcontato"><img class="menucontatoimg" style="color:red; padding-top:15px; padding-right:15px;" src="img/icon-linkdin.png"/></a>
+		<a href="#puxadorcontato"><img class="menucontatoimg2" style="color:red; padding-top:21px; padding-right:15px;" src="img/icon-be.png"/></a>
+		<a href="https://api.whatsapp.com/send?phone=5511949643773" target="_blank" rel="noopener noreferrer"><img class="menucontatoimg3" style="color:red; padding-top:18px; padding-right:15px;" src="img/icon-whats.png"/></a>
+		</div>
+		
+      <nav id="nav-menu-container">
+        <img src="img/fecharmenu.png" class="fechamenu"/>
+
+        <ul class="nav-menu">
+          <li><a href="#puxadorSolucoes">Soluções</a></li>
+          <!-- <li><a href="#puxadorcases">Cases</a></li> -->
+          <li><a href="#puxadorParaQuem">Para quem fazemos</a></li>
+          <li><a href="#puxadorcontato">Contato</a></li>
+		  <li class="tracomenu" style="color:#fff;margin-top: -2px;">__________</li>
+		  <li><p class="followmenu" style="color:#f40039; padding-top:8px;">FOLLOW US</p></li>
+		  <li style="margin-top: -7px;" class="followmenuimg1"><a href="https://www.linkedin.com/company/li-on-software-solutions/"><img class="img1menu" src="img/icon-linkdin.png"/></a></li>
+		  <li style="margin-top: -4px;" class="followmenuimg2"><a href="https://www.behance.net/lionsoftwareslt"><img class="img2menu" src="img/icon-be.png"/></a></li>
+		  <li style="margin-top: -7px; margin-left: 8px;" class="followmenuimg3"><a href="https://api.whatsapp.com/send?phone=5511949643773" target="_blank" rel="noopener noreferrer"><img class="img1menu" src="img/icon-whats.png"/></a></li>
+        </ul>
+		 
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+  <div class="container ">
+        <div class="row">
+          <div class="col-lg-8 col-11 frase">
+             <p>INOVAÇÃO, TRASFORMAÇÃO DIGITAL E TECNOLOGIA  <span>+ SOLUTIONS</span></p>
+      <p>Criamos e entregamos soluções em UX, Design e Tecnologia 
+que  atendem às necessidades da sua empresa, permitindo que 
+agregue valor e competitividade ao seu negócio.</p> </div>  
+        </div>
+      </div>
+    
+
+			<div class="container" style="
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content:center;
+      align-items:center;">
+ <a class="mouse smoothscroll scrollto" href="#puxadorSolucoes">
+  <div> 
+  	<img src="img/arrown-down-svg.svg" class="arrow">
+	</div>
+  <center><img src="img/arrown-down-svg.svg" class="arrowM"></center>
+  </a>
+  </div>
+			
+			
+			
+		
+  </section>
+  
+  <main id="main">
+
+    <!--==========================
+      Soluções Section
+    ============================-->
+    <section id="solucoes" >
+	<div class="container">
+        <div id="puxadorSolucoes" style="height: 35px;"></div>
+        <div class="section-header">
+          <h3>Soluções</h3>
+          <p class="sub">Desde 2013 no mercado, a Li.On é uma Fábrica de Software On Demand com foco em UX, especializada em atender
+o mercado de Tecnologia. Sempre atentos as tendências de inovação e transformação digital  para realizar 
+experiências únicas e significativas para o que o seu negócio necessita. Executamos serviços nas seguintes áreas:</p>
+		</div>
+		<div class="d-none d-md-block" id="solucoesDiv">
+        <div class="row align-items-center">
+		  <div style="padding:40px 0px 0px 0px" class="col-md-6 col-lg-2 col-6 align-middle wow bounceInUp" data-wow-duration="1.4s">
+              <center><img src="img/icon-1.png" alt="" class="img-fluid"> 
+            </center>
+          </div>
+          <div style="padding:40px 0px 0px 0px" class="col-md-6 col-lg-2 col-6 align-middle wow bounceInUp" data-wow-duration="1.4s">
+              <center><img src="img/icon-2.png" alt="" class="img-fluid"></center>
+          </div>
+          <div style="padding:40px 0px 0px 0px" class="col-md-6 col-lg-2 col-6 align-middle wow bounceInUp" data-wow-duration="1.4s">
+               <center><img src="img/icon-3.png" alt="" class="img-fluid"></center>
+          </div>
+          <div style="padding:40px 0px 0px 0px" class="col-md-6 col-lg-2 col-6 align-middle wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+			 <center><img src="img/icon-4.png" alt="" class="img-fluid"></center>
+          </div>
+          <div style="padding:40px 0px 0px 0px" class="col-md-6 col-lg-2 col-6 align-middle wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+              <center><img src="img/icon-5.png" alt="" class="img-fluid"></center>
+          </div>
+          <div style="padding:40px 0px 0px 0px" class="col-md-6 col-lg-2 col-6 align-middle wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">        
+             <center><img src="img/icon-6.png" alt="" ></center>
+          </div>
+        </div>
+		     
+			 
+			 <div class="row align-items-center">
+		  <div style="padding:40px 0px 0px 0px" class="col-md-6 col-lg-2 col-6 align-middle wow bounceInUp" data-wow-duration="1.4s">    
+              <center><h4 class="title">DESIGN</br>THINKING</h4><p>+INOVAÇÃO</p></center>
+          </div>
+
+          <div style="padding:40px 0px 0px 0px" class="col-md-6 col-lg-2 col-6 align-middle wow bounceInUp" data-wow-duration="1.4s">
+		<center><h4 class="title">ux</br>research</h4><p>+PESQUISA</p></center>
+		</div>
+		
+          <div style="padding:40px 0px 0px 0px" class="col-md-6 col-lg-2 col-6 align-middle wow bounceInUp" data-wow-duration="1.4s">
+			<center><h4 class="title">product</br>design</h4><p>+APP</p></center>
+          </div>
+
+          <div style="padding:40px 0px 0px 0px" class="col-md-6 col-lg-2 col-6 align-middle wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+          <center><h4 class="title">software</br>engineering</h4><p>+OTIMIZAÇÃO</p></center>
+          </div>
+		  
+          <div style="padding:40px 0px 0px 0px" class="col-md-6 col-lg-2 col-6 align-middle wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+          <center><h4 style="margin-bottom: 25px;margin-top:16px;" class="title">development</h4><p >+CODING</p></center>
+		  </div>
+
+          <div style="padding:40px 0px 0px 0px" class="col-md-6 col-lg-2 col-6 align-middle wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+		<center><h4 class="title">3d pRINT</br>& DESIGN</h4><p>+IMPRESSÃO</p></center>
+          </div>
+        </div>
+		</div>
+		
+	<!--==========================
+     Soluções Mobile
+    ============================-->
+	
+	<div class="solucoes-mobile d-lg-none">
+        <div class="row align-items-left">
+		  <div style="padding:40px 0px 0px 0px" class="col-md-6 col-lg-2 col-6 align-left wow bounceInUp" data-wow-duration="1.4s">
+              <center><img src="img/icon-1.png" alt=""> 
+            </center>
+          </div>
+          <div style="padding:50px 0px 0px 0px" class="col-md-6 col-lg-2 col-6 align-left wow bounceInUp" data-wow-duration="1.4s">    
+              <h4 class="title">DESIGN THINKING</h4><p>+INOVAÇÃO</p>
+          </div>
+          <div style="padding:40px 0px 0px 0px" class="col-md-6 col-lg-2 col-6 align-align-left wow bounceInUp" data-wow-duration="1.4s">
+               <center><img src="img/icon-2.png" alt=""></center>
+          </div>
+         <div style="padding:50px 0px 0px 0px" class="col-md-6 col-lg-2 col-6 align-align-left wow bounceInUp" data-wow-duration="1.4s">
+		<h4 class="title">UX RESEARCH</h4><p>+PESQUISA</p>
+		</div>
+          <div style="padding:40px 0px 0px 0px" class="col-md-6 col-lg-2 col-6 align-align-left wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+              <center><img src="img/icon-3.png" alt=""></center>
+          </div>
+          <div style="padding:50px 0px 0px 0px" class="col-md-6 col-lg-2 col-6 align-align-left wow bounceInUp" data-wow-duration="1.4s">
+		<h4 class="title">PRODUCT DESIGN</h4><p>+APP</p>
+          </div>
+		   <div style="padding:40px 0px 0px 0px" class="col-md-6 col-lg-2 col-6 align-align-left wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+              <center><img src="img/icon-4.png" alt=""></center>
+          </div>
+		  <div style="padding:50px 0px 0px 0px" class="col-md-6 col-lg-2 col-6 align-middle wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+          <h4 class="title">SOFTWARE</br>ENGINEERING</h4><p>+OTIMIZAÇÃO</p>
+          </div>
+		   <div style="padding:40px 0px 0px 0px" class="col-md-6 col-lg-2 col-6 align-align-left wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+              <center><img src="img/icon-5.png" alt=""></center>
+          </div>
+		   <div style="padding:50px 0px 0px 0px" class="col-md-6 col-lg-2 col-6 align-middle wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+         <h4 class="title">DEVELOPMENT</h4><p>+CODING</p>
+		  </div>
+		   <div style="padding:40px 0px 0px 0px" class="col-md-6 col-lg-2 col-6 align-align-left wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+              <center><img src="img/icon-6.png" alt=""></center>
+          </div>
+		  <div style="padding:50px 0px 0px 0px" class="col-md-6 col-lg-2 col-6 align-middle wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+		<h4 class="title">3D PRINT</br>& DESIGN</h4><p>+IMPRESSÃO</p>
+          </div>
+        </div>
+		</div>
+	
+	</div>
+     
+    </section>
+	
+		
+    <!--==========================
+     CAses Section
+    ============================-->
+    <!-- <section id="cases" class="section-with-bg wow fadeInUp">
+
+      <div class="container">
+	  
+    
+	  <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 col-12">
+            <div class="section-header title">
+          <h3 class="title" id="puxadorcases">CASES</h3>
+		</div>
+          </div>
+		             
+        </div>
+      
+	  
+      <div class="d-none d-sm-block">
+        <div class="expansao1" id="expansao1">
+        <div class="row ">
+          <div class="col-lg-4 col-md-6">
+            <div class="case">
+              <div class="case-img">
+                <img src="img/card-test.jpg" alt="pessoa 1" class="img-fluid">
+              </div>
+			  <div class="file">
+			  <p><img src="img/file.png" alt="file" class="img-fluid">UX RESEARCH</p></div>
+			  <h3>Sitemap e Navegação - 
+Portal Anhembi Morumbi</h3>
+<a href="case-page.html">VER MAIS ></a>
+              </div>
+            </div>
+        
+
+          <div class="col-lg-4 col-md-6">
+            <div class="case">
+              <div class="case-img">
+                <img src="img/card-test2.jpg" alt="pessoa 1" class="img-fluid">
+              </div>
+			  <div class="file">
+			  <p><img src="img/file.png" alt="file" class="img-fluid">UX DESIGN</p></div>
+			  <h3> "Abriu Sorriu" - Mundo Fini Wireframe Landing Page</h3>
+<a href="case-page.html">VER MAIS ></a>
+              </div>
+          </div>
+
+           <div class="col-lg-4 col-md-6">
+            <div class="case">
+              <div class="case-img">
+                <img src="img/card-test3.jpg" alt="pessoa 1" class="img-fluid">
+              </div>
+			  <div class="file">
+			  <p><img src="img/file.png" alt="file" class="img-fluid">VISUAL DESIGN</p></div>
+			  <h3> Canvas App Bradesco</h3>
+<a href="case-page.html">VER MAIS ></a>
+              </div>
+          </div>
+          </div>
+        </div>
+
+
+        <div class="expansao2" id="expansao2" style="display: none;">
+          <div class="row ">
+            <div class="col-lg-4 col-md-6">
+              <div class="case">
+                <div class="case-img">
+                  <img src="img/card-test.jpg" alt="pessoa 1" class="img-fluid">
+                </div>
+          <div class="file">
+          <p><img src="img/file.png" alt="file" class="img-fluid">UX RESEARCH</p></div>
+          <h3>Sitemap e Navegação - 
+  Portal Anhembi Morumbi</h3>
+  <a href="case-page.html">VER MAIS ></a>
+                </div>
+              </div>
+          
+  
+            <div class="col-lg-4 col-md-6">
+              <div class="case">
+                <div class="case-img">
+                  <img src="img/card-test2.jpg" alt="pessoa 1" class="img-fluid">
+                </div>
+          <div class="file">
+          <p><img src="img/file.png" alt="file" class="img-fluid">UX DESIGN</p></div>
+          <h3> "Abriu Sorriu" - Mundo Fini Wireframe Landing Page</h3>
+  <a href="case-page.html">VER MAIS ></a>
+                </div>
+            </div>
+  
+             <div class="col-lg-4 col-md-6">
+              <div class="case">
+                <div class="case-img">
+                  <img src="img/card-test3.jpg" alt="pessoa 1" class="img-fluid">
+                </div>
+          <div class="file">
+          <p><img src="img/file.png" alt="file" class="img-fluid">VISUAL DESIGN</p></div>
+          <h3> Canvas App Bradesco</h3>
+  <a href="case-page.html">VER MAIS ></a>
+                </div>
+            </div>
+            </div>
+          </div> -->
+
+
+			<div class="container d-block d-md-none">
+			 <p>
+<a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+<img src="img/seta.png" class="img-fluid" onmouseover="this.src='img/seta.png';" onmouseout="this.src='img/seta.png';"/></a>
+</p>
+		</div>
+		
+    <!-- SUBSTITUIR CLASSE DA DIV ---------------------------------------------------- -->
+			 <!-- <div class="container d-none d-md-block"> -->
+        <div>
+<p>
+
+  <!-- SETA EXPANSÂO ---------------------------------------------------------------------------------------------------------- -->
+
+   <div class="escondeSeta" style="display: none;">
+    <a id="show-or-hide" class="scrollto" href="#expansao2"><img src="img/seta.png" id="setaExpansaoCases"/></a>
+  </div>
+  <div class="escondeSeta2" style="display: none;">
+    <a id="show-or-hide2" class="scrollto" href="#puxadorcases"><img src="img/seta2.png" id="setaExpansaoCases"/></a>
+  </div>
+
+</p>
+		</div>
+
+
+
+</div>
+
+    <!-- </section> -->
+
+    <!--==========================
+      # Cards Mobile
+    ============================-->
+
+    <!-- <section id="sessaoCardsMobile">
+      <div class="slide-container swiper">
+        <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <img src="img/card-test3.jpg" alt="" class="card-img">    
+                    </div>
+
+                    <div class="card-content">
+                      <p class="pcard"><img src="img/file.png" alt="file" class="file">UX DESIGN</p>
+                        <p class="description">Sitemap e Navegação<br> 
+                          Portal Anhembi Morumbi</p>
+
+                        <button class="button"><a href="case-page.html" class="linkCardMobile">VER MAIS ></a></button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                            <img src="img/card-test.jpg" alt="" class="card-img">       
+                    </div>
+
+                    <div class="card-content">
+                      <p class="pcard"><img src="img/file.png" alt="file" class="file">UX DESIGN</p>
+                      <p class="description">Sitemap e Navegação<br> 
+                        Portal Anhembi Morumbi</p>
+
+                      <button class="button"><a href="case-page.html" class="linkCardMobile">VER MAIS ></a></button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <img src="img/card-test2.jpg" alt="" class="card-img">
+                    </div>
+
+                    <div class="card-content">
+                      <p class="pcard"><img src="img/file.png" alt="file" class="file">UX DESIGN</p>
+                      <p class="description">Sitemap e Navegação<br> 
+                        Portal Anhembi Morumbi</p>
+
+                      <button class="button"><a href="case-page.html" class="linkCardMobile">VER MAIS ></a></button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <img src="img/card-test.jpg" alt="" class="card-img">
+                    </div>
+
+                    <div class="card-content">
+                      <p class="pcard"><img src="img/file.png" alt="file" class="file">UX DESIGN</p>
+                      <p class="description">Sitemap e Navegação<br> 
+                        Portal Anhembi Morumbi</p>
+
+                      <button class="button"><a href="case-page.html" class="linkCardMobile">VER MAIS ></a></button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <img src="img/card-test3.jpg" alt="" class="card-img">
+                    </div>
+
+                    <div class="card-content">
+                      <p class="pcard"><img src="img/file.png" alt="file" class="file">UX DESIGN</p>
+                      <p class="description">Sitemap e Navegação<br> 
+                        Portal Anhembi Morumbi</p>
+
+                      <button class="button"><a href="case-page.html" class="linkCardMobile">VER MAIS ></a></button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <img src="img/card-test.jpg" alt="" class="card-img">
+                    </div>
+
+                    <div class="card-content">
+                      <p class="pcard"><img src="img/file.png" alt="file" class="file">UX DESIGN</p>
+                      <p class="description">Sitemap e Navegação<br> 
+                        Portal Anhembi Morumbi</p>
+
+                      <button class="button"><a href="case-page.html" class="linkCardMobile">VER MAIS ></a></button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <img src="img/card-test2.jpg" alt="" class="card-img">
+                    </div>
+
+                    <div class="card-content">
+                      <p class="pcard"><img src="img/file.png" alt="file" class="file">UX DESIGN</p>
+                      <p class="description">Sitemap e Navegação<br> 
+                        Portal Anhembi Morumbi</p>
+
+                      <button class="button"><a href="case-page.html" class="linkCardMobile">VER MAIS ></a></button>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <br><br>
+        <div class="swiper-pagination"></div>
+    </div>
+    </section> -->
+
+	
+	<!--==========================
+      # para quem fazemos
+    ============================-->
+    <section id="para-quem-fazemos">
+      <div id="puxadorParaQuem" style="height: 35px;"></div>
+	<div class="container">
+        
+        <div class="section-header">
+          <h3>para quem fazemos</h3>
+          
+		</div>
+		
+		 <div class="row">
+		<div class="col-lg-3 col-12">
+		  <div  class="align-middle d-none d-md-block" style="border-bottom: solid 2px white; width:100%; height: 26px; left: 30px;"></div>
+          </div>
+		<div class="col-lg-9 col-12">
+          <h4>clientes finais e empresas (b2b e b2c)</h4>
+		  </div>
+		  </div>
+
+		  
+		  		 <div class="row">
+		<div class="col-lg-3 col-12">
+          </div>
+		<div class="col-lg-9 logos col-12">
+      <img class="d-none d-md-block" src="img/clients_desktop.png" alt="" >
+	  <center><img class="d-block d-sm-none" src="img/clients_mobile.png" alt="" ></center>
+		  </div>
+		  </div>
+		  
+		  <div class="row">
+		<div class="col-lg-3 col-12">
+		  <div  class="align-middle d-none d-md-block" style="border-bottom: solid 2px white; width:100%; height: 26px; left: 30px;"></div>
+          </div>
+		<div class="col-lg-9 col-12">
+          <h4>nossos parceiros</h4>
+		  </div>
+		  </div>
+
+      <div class="row ">
+        <div class="col-lg-3 col-12"></div>
+        <div class="col-lg-2 logo col-12 parceiro"><center><img src="img/logoGr.png" alt="GR Business" class="logoGr"></center></div>
+        <div class="col-lg-7 col-12"><p class="textoParceiros">A Li.On Software + Solutions possui  parceria com a GR Business nas áreas de Desenvolvimento Web e Marketing Digital. A GR Business oferece os melhores serviços em: Criação de Sites, Apps, Logos e Post.</p>
+        <a href="https://www.grbusiness.com.br/" target="_blank" rel="noopener noreferrer" class="linkParceiros">SAIBA MAIS ></a>
+        <a class="mouse smoothscroll scrollto" href="#puxadorcontato">
+        <img src="img/seta-intro-parceiros.png" class="arrow2M">
+      </a>
+    </div>
+    <div class="col-lg-12 col-12"><h5>Entre em contato para fazer uma parceria conosco!</h5></div>
+          </div>
+		
+		<div class="row d-none d-md-block ">
+		
+  <a class="mouse smoothscroll scrollto" href="#puxadorSolucoes">
+    <div> 
+         <img src="img/seta-intro-parceiros.png" class="arrow2">
+     </div>
+  </a>
+  <a class="mouse smoothscroll scrollto" href="#puxadorcontato">
+       
+      <img src="img/seta-intro-parceiros.png" class="arrow2">   
+
+  </a>
+ 
+    
+
+
+		  </div>
+      </div>
+    </section>
+
+
+
+   
+    <!--==========================
+      contato Section
+    ============================-->
+    <section id="contato" class="section-bg wow fadeInUp">
+
+ <div class="container">
+        <div class="row">
+         
+          <div id="puxadorcontato" style="margin-top: -30px;"></div>
+		<div class="col-lg-12 col-12">
+      
+          <center><h1 class="titulo" id="titulo">CONTATO</h1></center>
+          <center><div style="margin-top: 20px;"><h5 class="orca">Faça um orçamento agora mesmo!</h5></div></center>
+		  </div>
+		 
+        </div>
+		</div></br>
+      <div class="container">
+        <div class="form">
+          <div id="sendmessage">Sua mensagem foi enviada. Obrigado!!</div>
+          <div id="errormessage"></div>
+          <form action="" method="post" role="form" class="contatoForm">
+            <div class="form-row">
+              <div class="form-group col-lg-3">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Nome" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group col-lg-3">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validation"></div>
+              </div>
+           <div class="form-group col-lg-4">
+                <input type="text" class="form-control" name="mensagem" id="mensagem" placeholder="Mensagem" data-rule="mensagem" data-msg="Please enter a valid email" />
+                <div class="validation"></div>
+              </div>
+            <div class="form-group col-lg-2">
+              <button type="submit">ENVIAR</button>
+            </div>
+			
+           </div>
+          </form></br>
+        </div>
+
+      </div>
+
+	  
+    </section><!-- #contato -->
+	
+
+  </main>
+
+
+
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-md-6 col-12 footer-info text-right d-none d-md-block" style="padding-right:50px">
+            <img src="img/logo-footer.png" alt="LION SOLUTIONS">
+            </div>
+			
+			<div class="col-lg-6 col-md-6 col-12 footer-info d-block d-sm-none">
+            <center><img src="img/logo-footer.png" alt="LION SOLUTIONS"></center>
+            </div>
+
+          <div class="col-lg-6 col-md-6 col-12 info-footer" >
+           <p>contato@lionsoftwaresolutions.com.br</p>
+
+          <p><a href="https://api.whatsapp.com/send?phone=5511949643773" target="_blank" rel="noopener noreferrer"><img src="img/icon-whats.png"/></a>&nbsp;&nbsp;&nbsp;+55 11 94964 3773</p>
+
+			<p>©Li.On Software + Solutions </br>Todos os direitos reservados.</p>
+			<p><a href="https://www.behance.net/lionsoftwareslt"><img src="img/icon-be.png"/></a> &nbsp;&nbsp;&nbsp <a href="https://www.linkedin.com/company/li-on-software-solutions/"><img src="img/icon-linkdin.png"/></a></p>
+            
+          </div>
+
+         
+        </div>
+      </div>
+    
+
+  </footer><!-- #footer -->
+
+ <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/venobox/venobox.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- contato Form JavaScript File -->
+  <script src="contatoform/contatoform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+  <script>
+
+$('#bs4-slide-carousel').carousel({
+    pause: true,
+    interval: false
+});
+
+$('#btnPrev').on('click', function () {
+  $('#bs4-slide-carousel').carousel('prev');
+})
+$('#btnNext').on('click', function () {
+  $('#bs4-slide-carousel').carousel('next');
+})
+</script>
+</body>
+
+</html>
